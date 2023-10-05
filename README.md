@@ -57,11 +57,10 @@ To get started with this project, follow these steps:
 - run `terraform apply` to create the infrastructure
 - once the infrastructure is provisioned, deploy your ASP.NET web application to the web VM and ensure that the application is configured to communicate with the DB VM using the private IP address
   - in `appsettings.json` replace nessesary credentails:
-  ```json
+  ```
   {
   "ConnectionStrings": {
     "SQLConnection": "Server=<server_ip>;Database=<db_name>;User Id=<user>;Password=<password>"
     }
   }
-
   ```
