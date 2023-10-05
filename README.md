@@ -17,19 +17,19 @@ The infrastructure includes two virtual machines (VMs) hosted in Microsoft Azure
 ## Infrastructure as Code (IaC)
 
 ### Prerequisites
-[Before starting the project, ensure the following prerequisites are met :](#azure-Prerequisites)
+Before starting the project, ensure the following prerequisites are met:
 - Azure Image available in the Azure Compute gallery
 - image should be pre-configured with:
   - Installed Internet Information Services (IIS)
   - Web Management Services
   - ASP.NET Hosting Bundle
   - Web Deploy 3.6
-- use a custom script extension to prepare the VM(script in scripts folder) or manually create an Azure Image by connecting to it, installing the required components, and creating an image from the Azure UI
+- use a custom script extension to prepare the VM(script in scripts folder) or manually create an Azure VM, connect to it, install the required components, and create an image from deployed VM using [Microsoft Azure UI](https://learn.microsoft.com/en-us/azure/virtual-machines/capture-image-portal)
 
 ### Infrastructure Components
 The project's infrastructure consists of the following components:
 - Web Virtual Machine (Web VM) which hosts the ASP.NET web application and has a public IP address to accept connections from the internet
-  - This VM is provisioned using an Azure Image from the Azure Compute gallery, image is a prerequisite for the project as explained in [Before starting the project, ensure the following prerequisites are met](#azure-Prerequisites) section
+  - This VM is provisioned using an Azure Image from the Azure Compute gallery, image is a prerequisite for the project as explained in [Before starting the project, ensure the following prerequisites are met](#prerequisites) section
 - Database Virtual Machine (DB VM) which hosts Microsoft SQL Server and does not have a public IP address, the Web VM communicates with it via a private IP within the virtual network
 - Azure Storage Account where scripts and images for the web application are stored
 
