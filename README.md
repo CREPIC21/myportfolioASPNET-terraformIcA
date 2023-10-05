@@ -60,7 +60,7 @@ To get started with this project, follow these steps:
   ```
   {
   "ConnectionStrings": {
-    "SQLConnection": "Server=<server_ip>;Database=<db_name>;User Id=<user>;Password=<password>"
+    "SQLConnection": "Server=**<server_ip>**;Database=<db_name>;User Id=<user>;Password=<password>"
     }
   }
   ```
