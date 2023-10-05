@@ -1,0 +1,7 @@
+# Azure keys
+MyPortfolioAppTerraformIaC/keys
+
+# Terraform files
+MyPortfolioAppTerraformIaC/.terraform*
+MyPortfolioAppTerraformIaC/terraform.tfs*
+MyPortfolioAppTerraformIaC/.auto.tfvars
